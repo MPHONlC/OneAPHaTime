@@ -1,0 +1,69 @@
+name: ✅ One APH a Time Test Checklist (PC)
+description: Run through One APH a Time's PC test checklist and report results
+title: '[TEST][PC] '
+labels:
+- testing
+assignees:
+- MPHONlC
+body:
+- type: markdown
+  attributes:
+    value: Thanks for testing **One APH a Time** on PC! Check off everything you actually tested and confirmed working. Anything broken or partly working, describe it in the notes field at the end instead of checking it off.
+- type: input
+  id: version
+  attributes:
+    label: Add-on version
+    placeholder: e.g. 2026.09.29.21.48
+  validations:
+    required: true
+- type: dropdown
+  id: platform
+  attributes:
+    label: Platform
+    options:
+    - PC (NA)
+    - PC (EU)
+    - PC (PTS)
+  validations:
+    required: true
+- type: checkboxes
+  id: pc_tests
+  attributes:
+    label: PC tests confirmed working
+    options:
+    - label: 'Get One label: At your bank, select a stack of 2+ recipes, motifs, fragments or containers.'
+    - label: 'Get One: Press Get One.'
+    - label: 'Use on close: Close the bank.'
+    - label: 'Known item: Get One on a recipe you already know.'
+    - label: 'Get All: At a bank press Alt+E.'
+    - label: 'Get All key: Open Controls and look for One APH a Time > Get All.'
+    - label: 'Filters: Untick Purple in Get All: quality and Containers in Get All: types. Get All again.'
+    - label: 'Quality filters: In Get All: quality tick and untick White, Green, Blue, Purple and Gold, then Get All.'
+    - label: 'Type filters: In Get All: types tick and untick Food and drink recipes, Furnishing plans, Crafting motifs, Style pages, Runeboxes, Collectible fragments, Runebox fragments, Recipe fragments, Containers and Scribing items, then Get All.'
+    - label: 'Guild bank: At a guild bank with withdraw and deposit rights and 2 free slots, Get One.'
+    - label: 'House storage: At a house storage chest, Get One.'
+    - label: 'Override off: Untick Override Withdraw Button (or /oneaphatime).'
+    - label: 'Toggle command: Type /oneaphatime twice.'
+    - label: 'Chat messages setting: Turn off Chat Logs, use Get One and Get All at a bank and close it, then type /oneaphatime twice.'
+    - label: 'Chat command: Type /oneaphatime chat, then again.'
+    - label: 'Combat: Press Get One or Get All in combat.'
+    - label: 'Full bag: With a nearly full backpack, Get One on a stack.'
+    - label: 'Nothing to take: Get All at a bank with nothing you can still learn or open that the filters allow.'
+    - label: 'Close with items left: Start Get All on a big bank and close the bank before it finishes.'
+    - label: 'Unusable item: Take an item your character cannot use.'
+    - label: 'Reset to defaults: Change some filters and press RESET TO DEFAULTS.'
+    - label: 'Wording: Read How it works in settings.'
+    - label: 'Combat: Close the bank while in combat.'
+    - label: 'Missing settings library: Disable LibAddonMenu-2.0 (PC) or LibHarvensAddonSettings (console) on a fresh install and log in.'
+    - label: 'On/off key: At a bank, look at the keybind strip, hover a stack of 2+ recipes, then press Alt+D twice.'
+    - label: 'On/off key binding: Open Controls and look for One APH a Time > Turn One APH a Time On or Off.'
+    - label: 'Get One Furnishing: At your bank, select a stack of 2+ furnishings and press Get One Furnishing.'
+    - label: 'Furnishing Vault: At the Furnishing Vault, select a stack of 2+ furnishings and press the button.'
+    - label: 'Single furnishing: At a bank or the vault, select a single furnishing.'
+    - label: 'Get One Furnishing off: Untick Get One Furnishing in settings, then select a stack of furnishings at a bank.'
+- type: textarea
+  id: notes
+  attributes:
+    label: Anything broken, partly working, or not tested
+    description: 'One line per issue: which test, what happened instead of Expected.'
+    placeholder: 'e.g. PC-L-04 Bug report: popup opened but API version line was blank'
