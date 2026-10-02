@@ -2,7 +2,7 @@
 ## AddOnVersion: 26092921
 ## Version: 2026.09.29.21.48
 ## Author: |ca500f3A|r|cb400e6P|r|cc300daH|r|cd200cdO|r|ce100c1NlC|r
-## APIVersion: 101050 101051
+## APIVersion: 101051 101052
 ## SavedVariables: OAPHSV
 ## OptionalDependsOn: LibAddonMenu-2.0 LibHarvensAddonSettings LibAPH
 ## Description: |cfa9c1bWithdraw takes one of a stack of recipes, motifs, fragments, containers or furnishings; Get All takes one of everything the settings allow. Learned items are used when you close the storage.|r |cCCFF00Toggle: /oneaphatime|r
