@@ -1,0 +1,64 @@
+name: "\u2705 One APH a Time Test Checklist (Console)"
+description: Run through One APH a Time's Console test checklist and report results
+title: '[TEST][Console] '
+labels:
+- testing
+assignees:
+- MPHONlC
+body:
+- type: markdown
+  attributes:
+    value: Thanks for testing **One APH a Time** on Console! Check off everything you actually tested and confirmed working. Anything broken or partly working, describe it in the notes field at the end instead of checking it off.
+- type: input
+  id: version
+  attributes:
+    label: Add-on version
+    placeholder: e.g. 2026.09.29.21.48
+  validations:
+    required: true
+- type: dropdown
+  id: platform
+  attributes:
+    label: Platform
+    options:
+    - Console (Xbox)
+    - Console (PlayStation)
+  validations:
+    required: true
+- type: checkboxes
+  id: console_tests
+  attributes:
+    label: Console tests confirmed working
+    options:
+    - label: 'Get One label: At your bank, select a stack of 2+ recipes, motifs, fragments or containers.'
+    - label: 'Get One: Press Get One.'
+    - label: 'Use on close: Close the bank.'
+    - label: 'Known item: Get One on a recipe you already know.'
+    - label: 'Get All: At a bank hold Y.'
+    - label: 'Filters: Untick Purple in Get All: quality and Containers in Get All: types. Get All again.'
+    - label: 'Quality filters: In Get All: quality tick and untick White, Green, Blue, Purple and Gold, then Get All.'
+    - label: 'Type filters: In Get All: types tick and untick Food and drink recipes, Furnishing plans, Crafting motifs, Style pages, Runeboxes, Collectible fragments, Runebox fragments, Recipe fragments, Containers and Scribing items, then Get All.'
+    - label: 'Guild bank: At a guild bank with withdraw and deposit rights and 2 free slots, Get One.'
+    - label: 'Guild bank label: In the gamepad guild bank, focus a stack you can learn or open.'
+    - label: 'House storage: At a house storage chest, Get One.'
+    - label: 'Override off: Untick Override Withdraw Button (or /oneaphatime).'
+    - label: 'Toggle command: Type /oneaphatime twice.'
+    - label: 'Chat messages setting: Turn off Chat Logs, use Get One and Get All at a bank and close it, then type /oneaphatime twice.'
+    - label: 'Chat command: Type /oneaphatime chat, then again.'
+    - label: 'Combat: Press Get One or Get All in combat.'
+    - label: 'Full bag: With a nearly full backpack, Get One on a stack.'
+    - label: 'Nothing to take: Get All at a bank with nothing you can still learn or open that the filters allow.'
+    - label: 'Close with items left: Start Get All on a big bank and close the bank before it finishes.'
+    - label: 'Unusable item: Take an item your character cannot use.'
+    - label: 'Reset to defaults: Change some filters and press RESET TO DEFAULTS.'
+    - label: 'Wording: Read How it works in settings.'
+    - label: 'Combat: Close the bank while in combat.'
+    - label: 'Missing settings library: Disable LibAddonMenu-2.0 (PC) or LibHarvensAddonSettings (console) on a fresh install and log in.'
+    - label: 'Furnishing at guild bank: In the gamepad guild bank (withdraw and deposit rights, 2 free slots), focus a stack of 2+ furnishings and withdraw.'
+    - label: 'Get One Furnishing off: Untick Get One Furnishing in settings, then withdraw a stack of furnishings from the guild bank.'
+- type: textarea
+  id: notes
+  attributes:
+    label: Anything broken, partly working, or not tested
+    description: 'One line per issue: which test, what happened instead of Expected.'
+    placeholder: 'e.g. PC-L-04 Bug report: popup opened but API version line was blank'
