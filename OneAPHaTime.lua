@@ -814,7 +814,7 @@ local function BuildKeyboardPanel(lam)
 		name = "|c9CD04COne APH a Time|r",
 		displayName = "|c00FFFFOne APH a Time|r",
 		author = "|ca500f3A|r|cb400e6P|r|cc300daH|r|cd200cdO|r|ce100c1NlC|r",
-		version = "2026.10.15.14.36",
+		version = "2026.10.18.01.41",
 		registerForRefresh = true,
 		translation = "https://www.esoui.com/portal.php?id=360&a=featurereq",
 		donation = "https://buymeacoffee.com/aph0nlc",
